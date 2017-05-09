@@ -141,6 +141,19 @@
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/events']"><i class="icon-envelope"></i> Eventos</a>
         </li>
+        <li class="divider"></li>
+        
+        <li class="nav-item nav-dropdown">
+          <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-people"></i> Clientes</a>
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/client']"><i class="icon-user-follow"></i> Crear</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/pages/register']"><i class="icon-notebook"></i> Consultar</a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item">
           <a class="nav-link" routerLinkActive="active" [routerLink]="['/appointments']"><i class="icon-calendar"></i> Citas</a>
         </li>

@@ -27,6 +27,10 @@ export const routes: Routes = [
         loadChildren: './events/events.module#EventosModule'
       },
       {
+        path: 'client',
+        loadChildren: './client/client.module#ClientModule'
+      },
+      {
         path: 'appointments',
         loadChildren: './appointments/appointments.module#AppointmentsModule'
       },
@@ -64,7 +68,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
