@@ -27,6 +27,10 @@ export const routes: Routes = [
         loadChildren: './events/events.module#EventosModule'
       },
       {
+        path: 'appointments',
+        loadChildren: './appointments/appointments.module#AppointmentsModule'
+      },
+      {
         path: 'components',
         loadChildren: './components/components.module#ComponentsModule'
       },
