@@ -27,6 +27,10 @@ export const routes: Routes = [
         loadChildren: './events/events.module#EventosModule'
       },
       {
+        path: 'client',
+        loadChildren: './client/client.module#ClientModule'
+      },
+      {
         path: 'components',
         loadChildren: './components/components.module#ComponentsModule'
       },
