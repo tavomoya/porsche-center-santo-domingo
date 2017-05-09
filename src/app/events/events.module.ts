@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 
+import { ModalModule } from 'ng2-bootstrap/modal';
 import { EventsComponent } from './events';
 import { EventsRoutingModule } from './events-routing.module';
 
 @NgModule({
   imports: [
-    EventsRoutingModule
+    EventsRoutingModule,
+    ModalModule.forRoot(),
+
   ],
-  declarations: [ EventsComponent ]
+  declarations: [EventsComponent]
 })
 export class EventosModule { }

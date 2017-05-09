@@ -1,6 +1,6 @@
 <div class="animated fadeIn">
 	<div>
-		<button class="btn btn-primary"><i class="fa fa-calendar"></i> Crear Evento</button>
+		<button class="btn btn-primary" (click)="myModal.show()" ><i class="fa fa-calendar"></i> Crear Evento</button>
 	</div>
 	<br />
 
@@ -13,7 +13,7 @@
 					<h4 class="card-title">Nombre del evento</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet.</p>
 					<a href="#" class="btn btn-primary">Ver detalles</a>
-					<p class="pull-right text-muted">09/05/2017</p>					
+					<p class="pull-right text-muted">09/05/2017</p>
 				</div>
 			</div>
 		</div>
@@ -25,7 +25,7 @@
 					<h4 class="card-title">Nombre del evento</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet.</p>
 					<a href="#" class="btn btn-primary">Ver detalles</a>
-					<p class="pull-right text-muted">09/05/2017</p>					
+					<p class="pull-right text-muted">09/05/2017</p>
 				</div>
 			</div>
 		</div>
@@ -49,10 +49,87 @@
 					<h4 class="card-title">Nombre del evento</h4>
 					<p class="card-text">Lorem ipsum dolor sit amet.</p>
 					<a href="#" class="btn btn-primary">Ver detalles</a>
-					<p class="pull-right text-muted">09/05/2017</p>					
+					<p class="pull-right text-muted">09/05/2017</p>
 				</div>
 			</div>
 		</div>
 		<!--/.col-->
 	</div>
 </div>
+
+<div bsModal #myModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Nuevo Evento</h4>
+				<button type="button" class="close" (click)="myModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label for="name">Nombre</label>
+							<input type="text" class="form-control" id="name" placeholder="Nombre del evento">
+						</div>
+					</div>
+				</div>
+				<!--/.row-->
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label for="name">Lugar</label>
+							<input type="text" class="form-control" id="name" placeholder="Lugar donde se efectuara">
+						</div>
+					</div>
+				</div>
+				<!--/.row-->
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="name">Fecha</label>
+							<input type="date" class="form-control">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label for="name">Hora</label>
+							<select class="form-control" id="ccmonth">
+                <option>1:00 PM</option>
+                <option>2:00 PM</option>
+                <option>3:00 PM</option>
+                <option>4:00 PM</option>
+                <option>5:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+                <option>10:00 PM</option>
+                <option>11:00 PM</option>
+                <option>12:00 PM</option>
+              </select>
+						</div>
+					</div>
+				</div>
+				<!--/.row-->
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label for="name">Imagen del Evento</label>
+							<input type="file" class="form-control">
+						</div>
+					</div>
+				</div>
+				<!--/.row-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" (click)="myModal.hide()">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
