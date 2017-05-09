@@ -19,19 +19,36 @@ export class AppointmentsComponent {
         start: '2017-05-09'
       },
       {
+        title: 'Mantenimiento',
+        start: '2017-05-09'
+      },
+      {
+        title: 'Mantenimiento',
+        start: '2017-05-09'
+      },
+      {
+        title: 'Mantenimiento',
+        start: '2017-05-09'
+      },
+      {
         title: 'Cambio de espejos',
         start: '2017-05-07',
-        end: '2017-05-10'
       },
       {
         title: 'Reparacion bumper',
-        start: '2017-05-09',
-        end: '2017-05-27'
+        start: '2017-05-19',
+      },
+      {
+        title: 'Reparacion bumper',
+        start: '2017-05-19',
+      },
+      {
+        title: 'Reparacion bumper',
+        start: '2017-05-19',
       },
       {
         title: 'Porque si',
-        start: '2017-05-09',
-        end: '2017-05-09'
+        start: '2017-05-10',
       }
     ]
   };
