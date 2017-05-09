@@ -23,6 +23,10 @@ export const routes: Routes = [
         loadChildren: './dashboard/dashboard.module#DashboardModule'
       },
       {
+        path: 'events',
+        loadChildren: './events/events.module#EventosModule'
+      },
+      {
         path: 'components',
         loadChildren: './components/components.module#ComponentsModule'
       },
